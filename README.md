@@ -45,6 +45,38 @@ https://pothole-and-defect-detector-lendale-krishna-kumari.streamlit.app/
 
 Pothole-VoxRL dataset from Roboflow Universe.
 
+## Successful Detection Examples
+
+### Example 1
+![Successful Detection 1](successful_detection_1.png)
+
+### Example 2
+![Successful Detection 2](successful_detection_2.png)
+
+### Example 3
+![Successful Detection 3](successful_detection_3.png)
+
+## Failure Analysis
+
+### Failure Example 1 – Missed Detection
+![Failure Example 1](failure_example_1.png)
+
+The model failed to detect the pothole annotated in the ground-truth label.
+
+### Failure Example 2 – Missed Detection
+![Failure Example 2](failure_example_2.png)
+
+The model failed to identify the pothole present in the ground-truth annotation.
+
+### Failure Example 3 – Partial Detection
+![Failure Example 3](failure_example_3.png)
+
+The model detected one pothole but missed another annotated pothole in the same image.
+
+## Conclusion
+
+The project demonstrates YOLOv8-based pothole detection with confidence scoring and road severity classification. The test results and failure analysis highlight both the model's capabilities and its limitations.
+
 ## Limitations
 
 - Detection performance depends on image quality and lighting.

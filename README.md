@@ -26,8 +26,28 @@ Run application: streamlit run streamlit_app.py
 
 ## Model
 YOLOv8n fine-tuned on the Pothole-VoxRL dataset.
-Evaluation metrics will be added using actual test results.
+## Model Performance
+
+The YOLOv8n model was evaluated on the test dataset.
+
+| Evaluation Metric | Result |
+|---|---:|
+| Precision | 81.32% |
+| Recall | 68.83% |
+| mAP50 | 77.08% |
+| mAP50-95 | 46.96% |
+
+## Live Application
+
+https://pothole-and-defect-detector-lendale-krishna-kumari.streamlit.app/
+
+## Dataset
+
+Pothole-VoxRL dataset from Roboflow Universe.
 
 ## Limitations
-Performance may vary depending on image quality, lighting,
-road conditions, and pothole size.
+
+- Detection performance depends on image quality and lighting.
+- Small or partially obscured potholes may be missed.
+- False-positive detections may occur on road textures.
+- Severity is estimated using the sum of detected bounding-box areas divided by image area.
